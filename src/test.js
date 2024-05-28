@@ -5,5 +5,5 @@ export const Test = () => {
   useEffect(() => {
     setValue(10)
   })
-  return <div>It's test {value}</div>
+  return <div>It's test: {value}</div>
 }
