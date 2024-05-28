@@ -7,7 +7,7 @@ const App = () => {
     <div>
       <Test />
     </div>
-  );
+  )
 }
 
 const root = ReactDOM.createRoot(document.getElementById('app'))
