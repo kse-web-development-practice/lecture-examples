@@ -14,7 +14,6 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended'],
   plugins: ['react', 'react-hooks'],
   rules: {
-    // Define your custom ESLint rules here, if needed.
     'react/react-in-jsx-scope': 'off',
     'react/no-unescaped-entities': 0
   }
