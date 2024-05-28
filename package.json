@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "lint": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "lint": "eslint"
   },
   "author": "",
   "license": "ISC",
