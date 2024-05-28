@@ -1,0 +1,26 @@
+{
+  "extends": ["eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "plugins": [],
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "jsx/mark-used-vars": 1,
+    "jsx/no-undef": 1
+  },
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  }
+}
