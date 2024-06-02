@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import { CounterWithUseRef } from './counter'
+import { Catalog } from './memo-example'
 
 const App = () => {
   const [counter, setCounter] = useState(0)
@@ -21,7 +21,8 @@ const App = () => {
       {/*<CounterAsReducer />*/}
       {/*<CounterWithEffect />*/}
       {/*<CounterWithUseMemo />*/}
-      <CounterWithUseRef />
+      {/*<CounterWithUseRef />*/}
+      <Catalog />
     </div>
   )
 }
