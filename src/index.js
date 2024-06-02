@@ -1,28 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Catalog } from './memo-example'
+import { Lecture7 } from './demo-lecture-7'
 
 const App = () => {
-  const [counter, setCounter] = useState(0)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCounter(counter + 1)
-    }, 3000)
-
-    return () => {
-      clearInterval(interval)
-    }
-  }, [counter])
-
   return (
     <div>
-      {/*{counter < 3 && <Greetings name="Brian" tick={counter} />}*/}
-      {/*{counter < 3 && <GreetingsFn name="Brian" tick={counter} />}*/}
-      {/*<CounterAsReducer />*/}
-      {/*<CounterWithEffect />*/}
-      {/*<CounterWithUseMemo />*/}
-      {/*<CounterWithUseRef />*/}
-      <Catalog />
+      <Lecture7 />
     </div>
   )
 }
