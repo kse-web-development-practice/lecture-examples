@@ -24,6 +24,20 @@ module.exports = (env) => {
               presets: ['@babel/preset-react', '@babel/preset-env']
             }
           }
+        },
+        {
+          test: /\.css$/i,
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                modules: {
+                  localIdentName: '[local]--[name]--[hash:base64:5]'
+                }
+              }
+            }
+          ]
         }
       ]
     },
