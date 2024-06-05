@@ -1,0 +1,13 @@
+.logo {
+    padding: 5px;
+}
+
+.user {
+    padding: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: grey;
+}
