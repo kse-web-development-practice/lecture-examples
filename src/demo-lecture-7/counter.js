@@ -8,7 +8,7 @@ export const Counter = () => {
   }, 1000)
 
   return <div>Counter: {value}</div>
-}
+};
 
 function reducer(state, action) {
   if (action.type === 'increase') {
