@@ -63,7 +63,7 @@
   },
   "lint-staged": {
     "src/*.js": [
-      "eslint ./src/* --cache --fix",
+      "npm run lint -- --cache --fix",
       "prettier --write --ignore-unknown"
     ]
   }
