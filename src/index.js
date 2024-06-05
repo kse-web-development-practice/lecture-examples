@@ -2,12 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Lecture7 } from './demo-lecture-7'
 import { Lecture8 } from './demo-lecture-8'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Demo</div>
+    element: (
+      <div>
+        <h2>Demo</h2>
+        <br />
+        <Link to={'/7'}>To Lecture 7</Link> | <Link to={'/8'}>To Lecture 8</Link>
+      </div>
+    )
   },
   {
     path: '/7',
