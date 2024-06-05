@@ -5,7 +5,7 @@ export function GreetingsFn(props) {
   const { name, tick } = props
 
   useEffect(() => {
-    console.log('after render when counter is equal to ', props.tick)
+    console.log('after renderPointer when counter is equal to ', props.tick)
 
     return () => {
       console.log('cleanup function for last effect when counter is equal to ', props.tick)
@@ -20,7 +20,7 @@ export function GreetingsFn(props) {
 
   return (
     <div>
-      {console.log('render when counter is equal to ', props.tick)}
+      {console.log('renderPointer when counter is equal to ', props.tick)}
       Hello {name} {tick}
     </div>
   )

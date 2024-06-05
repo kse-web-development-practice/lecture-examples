@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Lecture7 } from './demo-lecture-7'
+import { Lecture8 } from './demo-lecture-8'
 
 const App = () => {
   return (
     <div>
-      <Lecture7 />
+      <Lecture8 />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-export const Mouse = ({ renderPointer }) => {
+export const Mouse = () => {
   const [position, setPosition] = React.useState({
     x: 0,
     y: 0
@@ -16,14 +16,17 @@ export const Mouse = ({ renderPointer }) => {
     })
   })
 
-  return <div>{renderPointer(position.x, position.y)}</div>
+  return (
+    <div>
+      <Pointer left={position.x} top={position.y} />
+      <span>
+        Coordinates: {position.x} / {position.y}
+      </span>
+    </div>
+  )
 }
 
-Mouse.propTypes = {
-  renderPointer: PropTypes.func
-}
-
-export const Pointer = ({ left, top }) => {
+const Pointer = ({ left, top }) => {
   return (
     <div
       className="box"
