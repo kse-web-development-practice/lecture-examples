@@ -1,0 +1,12 @@
+.wrapper {
+    height: 100vh;
+}
+
+.box {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: red;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}

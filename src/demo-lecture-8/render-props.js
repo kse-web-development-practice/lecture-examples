@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 
+import * as styles from './index.module.css'
+
 export const Mouse = ({ renderPointer }) => {
   const [position, setPosition] = React.useState({
     x: 0,
@@ -26,7 +28,7 @@ Mouse.propTypes = {
 export const Pointer = ({ left, top }) => {
   return (
     <div
-      className="box"
+      className={styles.box}
       style={{
         left,
         top
