@@ -3,7 +3,7 @@ name: Node.js CI
 on: [push]
 
 jobs:
-  install dependencies:
+  dependencies:
     runs-on: ubuntu-latest
 
     steps:
