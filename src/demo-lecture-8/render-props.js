@@ -19,6 +19,11 @@ export const Mouse = ({ renderPointer }) => {
   })
 
   return <div>{renderPointer(position.x, position.y)}</div>
+  // return (
+  //   <div>
+  //     <Pointer left={position.x} top={position.y} />
+  //   </div>
+  // )
 }
 
 Mouse.propTypes = {

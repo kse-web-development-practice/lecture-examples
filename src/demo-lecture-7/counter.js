@@ -40,7 +40,7 @@ export const CounterWithEffect = () => {
 
   useEffect(() => {
     fetchData.then((result) => setCounter(result))
-  }, [])
+  }, [counter])
 
   return <div>Counter: {counter}</div>
 }
@@ -49,7 +49,7 @@ export const CounterWithUseMemo = () => {
   const [counter, setCounter] = useState(0)
 
   const count = useMemo(() => {
-    for (let i = 0; i < 9999999999; ++i) {
+    for (let i = 0; i < 999999999; ++i) {
       //
     }
     return 100
@@ -67,12 +67,15 @@ export const CounterWithUseMemo = () => {
 export const CounterWithUseRef = () => {
   const [counter, setCounter] = useState(0)
   const ref = useRef(null)
-
+  const ref1 = useRef(null)
+  console.log(ref1)
   const save = () => {
     if (ref.current) {
       setCounter(ref.current.value)
     }
   }
+
+  ref1.current = 10
 
   return (
     <div>
