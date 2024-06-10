@@ -18,6 +18,7 @@ jobs:
               ~/node_modules
       - run: npm install
   build:
+    needs: dependencies
 
     runs-on: ubuntu-latest
 
