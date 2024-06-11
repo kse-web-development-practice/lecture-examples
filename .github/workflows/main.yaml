@@ -53,7 +53,7 @@ jobs:
           key: ${{ runner.os }}-build-dependencies-${{ hashFiles('**/package-lock.json') }}
           path: |
             ./node_modules
-        run: |
+      - run: |
           npm run build
       - name: Archive artufacts
         uses: actions/upload-artifact@v4
