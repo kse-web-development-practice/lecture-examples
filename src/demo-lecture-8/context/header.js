@@ -8,7 +8,7 @@ export const Header = ({ name }) => {
     <header className={styles.header}>
       <div className={styles.logo}>Site name</div>
       <div className={styles.user}>Hello, {name}</div>
-      <div className={styles.user}>Hello, {name}!  !</div>
+      <div className={styles.user}>Hello, {name}!    !</div>
     </header>
   )
 }

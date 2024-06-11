@@ -64,9 +64,8 @@
     }
   },
   "lint-staged": {
-    "src/*.js": [
+    "src/*.*": [
       "npm run lint:fix",
-      "npm run lint -- --cache --fix",
       "prettier --write --ignore-unknown"
     ]
   }
