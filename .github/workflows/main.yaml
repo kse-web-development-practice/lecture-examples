@@ -63,9 +63,6 @@ jobs:
 
   publish:
     needs: build
-
-    runs-on: ubuntu-latest
-
     uses: kse-web-development-practice/react-examples/.github/workflows/static.yml@main
 
 
