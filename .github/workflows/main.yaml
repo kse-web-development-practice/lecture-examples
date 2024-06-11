@@ -55,6 +55,12 @@ jobs:
             ./node_modules
       - run: npm run build
       - run: npm test
+      - name: Archive artufacts
+          uses: actions/upload-artifact@v4
+          with:
+            name: dist
+            path: dist
+
 
   sun-subflow:
     uses: kse-web-development-practice/react-examples/.github/workflows/reusable.yml@main
