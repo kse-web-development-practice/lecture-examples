@@ -61,6 +61,14 @@ jobs:
           name: dist
           path: dist
 
+  publish:
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    uses: kse-web-development-practice/react-examples/.github/workflows/static.yml@main
+
+
 
   sun-subflow:
     uses: kse-web-development-practice/react-examples/.github/workflows/reusable.yml@main
