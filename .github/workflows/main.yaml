@@ -38,3 +38,8 @@ jobs:
       - run: echo Hello
       - run: npm run build
       - run: npm test
+
+  sun-subflow:
+    uses: kse-web-development-practice/react-examples/.github/workflows/reusable.yml@main
+    with:
+      some: 'some-parameter-here'
