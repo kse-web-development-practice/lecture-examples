@@ -6,8 +6,8 @@
     "build": "webpack --env production",
     "dev": "webpack serve --env dev",
     "test": "echo tested...",
-    "lint:fix": "eslint --fix",
     "lint": "eslint ./src/*",
+    "lint:fix": "eslint ./src/* --fix",
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
