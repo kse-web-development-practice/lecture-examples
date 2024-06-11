@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
@@ -48,6 +49,9 @@ module.exports = (env) => {
       }),
       new HtmlWebpackPlugin({
         template: 'public/index.html'
+      }),
+      new webpack.DefinePlugin({
+        'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL)
       })
     ],
     devServer: {
