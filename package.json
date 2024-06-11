@@ -64,7 +64,11 @@
     }
   },
   "lint-staged": {
-    "src/*.*": [
+    "*.js": [
+      "npm run lint:fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.css": [
       "npm run lint:fix",
       "prettier --write --ignore-unknown"
     ]
